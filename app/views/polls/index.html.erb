@@ -1,0 +1,6 @@
+<% @polls.each do |poll| %>
+
+  <p>
+  <%= poll.id %> - <%= poll.question %> <%= link_to "Link", "/polls/#{poll.id}" %>
+  </p>
+<% end %>

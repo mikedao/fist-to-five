@@ -28,4 +28,8 @@ class PollsController < ApplicationController
     end
     redirect_to "/polls/#{poll.id}"
   end
+
+  def index
+    @polls = Poll.all
+  end
 end
