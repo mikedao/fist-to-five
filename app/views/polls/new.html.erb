@@ -1,0 +1,7 @@
+<%= form_with url: "/polls", method: :post, local: true do |form| %>
+  <%= form.label :question %>
+  <%= form.text_field :question %>
+  <%= form.submit 'Create Poll' %>
+<% end %>
+
+

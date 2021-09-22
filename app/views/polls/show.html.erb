@@ -1,0 +1,16 @@
+<h1><%= @poll.question %> </h1>
+
+<p>Ones: <%= @poll.ones %></p>
+<p>Twos: <%= @poll.twos %></p>
+<p>Threes: <%= @poll.threes %></p>
+<p>Fours: <%= @poll.fours %></p>
+<p>Fives: <%= @poll.fives %></p>
+
+
+<h2> Vote </h2>
+
+<%= link_to "1", "/polls/#{@poll.id}/?value=1", method: "update" %>
+<%= link_to "2", "/polls/#{@poll.id}/?value=2", method: "update" %>
+<%= link_to "3", "/polls/#{@poll.id}/?value=3", method: "update" %>
+<%= link_to "4", "/polls/#{@poll.id}/?value=4", method: "update" %>
+<%= link_to "5", "/polls/#{@poll.id}/?value=5", method: "update" %>
